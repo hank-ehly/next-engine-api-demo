@@ -29,6 +29,21 @@ export class AppComponent {
             title: '受注伝票オプション',
             items: [
                 {title: '件数取得', requestURI: 'https://api.next-engine.org/api_v1_receiveorder_option/count'},
+                {title: '検索', requestURI: 'https://api.next-engine.org/api_v1_receiveorder_option/search'}
+            ]
+        },
+        {
+            title: '受注明細',
+            items: [
+                {title: '件数取得', requestURI: 'https://api.next-engine.org/api_v1_receiveorder_row/count'},
+                {title: '検索', requestURI: 'https://api.next-engine.org/api_v1_receiveorder_row/search'}
+            ]
+        },
+        {
+            title: '発送方法別区分',
+            items: [
+                {title: '件数取得', requestURI: 'https://api.next-engine.org/api_v1_receiveorder_forwardingagent/count'},
+                {title: '検索', requestURI: 'https://api.next-engine.org/api_v1_receiveorder_forwardingagent/search'}
             ]
         }
     ];
