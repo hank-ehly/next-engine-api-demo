@@ -1,0 +1,39 @@
+@import '../core';
+
+.modal-dialog .modal-content {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.modal-frame__close-button-frame {
+  background: transparent;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-frame__close-button {
+  align-self: flex-start;
+  background: transparent url("https://storage.googleapis.com/stg.getnativelearning.com/assets/icons/close.svg");
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  height: 20px;
+  outline: none;
+  width: 20px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.modal-frame {
+  //width: 400px;
+}
+
+.gn-modal-content {
+  @include border-radius();
+  box-shadow: 0 1px 2px rgba($black, 0.5);
+  width: 100%;
+  background: $white;
+}

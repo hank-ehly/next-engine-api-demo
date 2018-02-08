@@ -1,0 +1,24 @@
+@import '../core';
+
+.link {
+  background: transparent;
+  color: $primary;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid transparent;
+  padding: 0;
+
+  &:hover, &:focus {
+    color: $primary;
+    border-bottom-color: $iceberg;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+.link.link--disabled {
+  color: $regent-gray;
+  cursor: not-allowed;
+}

@@ -16,10 +16,7 @@
         </div>
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
-            <h1>{{ activeSection.title + activeItem.title }}</h1>
-            <hr>
-            <h5>Request URI</h5>
-            <pre>{{ activeItem.requestURI }}</pre>
+            <router-outlet></router-outlet>
         </main>
 
     </div>

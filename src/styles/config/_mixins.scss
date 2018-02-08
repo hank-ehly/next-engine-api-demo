@@ -1,0 +1,14 @@
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import './debug';
+
+@mixin debug-background-color($background-color) {
+  @if ($debug) {
+    background-color: $background-color !important;
+  }
+}
+
+@mixin debug-opacity($opacity) {
+  @if ($debug) {
+    opacity: $opacity !important;
+  }
+}
